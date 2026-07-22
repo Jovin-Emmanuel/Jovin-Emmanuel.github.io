@@ -3,144 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntelliSchedule Screenshots</title>
+    <title>IntelliSchedule - Screenshots</title>
+    <!-- Include your template's CSS file here -->
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Modern Reset & Page Setup */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        /* Screenshot Gallery Grid Styles */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            /* Gradient background: Dark navy fading into a soft light blue */
-            background: linear-gradient(180deg, #0f172a 0%, #1e293b 35%, #3b82f6 85%, #dbeafe 100%);
-            background-attachment: fixed; /* Keeps the gradient smooth while scrolling */
-            color: #1e293b;
-            line-height: 1.6;
-            padding: 2rem 1rem;
-            min-height: 100vh;
-        }
-
-        header {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 3rem auto;
-        }
-
-        header h1 {
-            font-size: 2.25rem;
-            font-weight: 700;
-            color: #ffffff; /* White title for high contrast on dark background */
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            color: #94a3b8; /* Light muted text for readability */
-            font-size: 1.1rem;
-        }
-
-        /* Responsive Grid Layout */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 1.5rem;
         }
 
-        /* Image Card Styles */
-        .card {
-            background: #ffffff;
-            border-radius: 12px;
+        .screenshot-card {
+            background: #1e293b;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.4);
+        .screenshot-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
         }
 
-        .card img {
+        .screenshot-card img {
             width: 100%;
-            height: 380px;
+            height: 250px;
             object-fit: contain;
-            background-color: #0d131d;
+            background-color: #0f172a;
             display: block;
-            border-bottom: 1px solid #f1f5f9;
         }
 
         .card-body {
             padding: 1.25rem;
+            color: #f8fafc;
         }
 
-        .card-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #0f172a;
+        .card-body h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+            color: #38bdf8;
         }
 
-        .card-caption {
+        .card-body p {
+            margin: 0;
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 0.25rem;
+            color: #94a3b8;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>IntelliSchedule App Showcase</h1>
-        <p>A smart activity planner and schedule manager built for seamless daily organization.</p>
-    </header>
-
-    <main class="gallery-grid">
-
-        <div class="card">
-            <img src="img/screenshot2.png.jpeg" alt="IntelliSchedule Splash Screen">
-            <div class="card-body">
-                <div class="card-title">Splash Screen</div>
-                <div class="card-caption">The clean launch screen introducing IntelliSchedule: Smart Activity Planner.</div>
+    <!-- Standard Template Navigation Bar -->
+    <div class="menu-container">
+        <div class="menu">
+            <a href="index.html" class="logo">IntelliSchedule</a>
+            <div class="links">
+                <a href="index.html#overview">Overview</a>
+                <a href="index.html#features">Features</a>
+                <a href="architecture.html">Architecture</a>
+                <a href="screenshots.html" class="active">Screenshots</a>
+                <a href="index.html#team">Team</a>
+                <a href="index.html#demo">Demo</a>
+                <a href="https://github.com/Jovin-Emmanuel/Jovin-Emmanuel.github.io" target="_blank">GitHub</a>
             </div>
         </div>
+    </div>
 
-        <div class="card">
-            <img src="img/screenshot3.png.jpeg" alt="Home Dashboard">
-            <div class="card-body">
-                <div class="card-title">Home Dashboard</div>
-                <div class="card-caption">Main hub displaying activity suggestions, next scheduled tasks, and smart reminders.</div>
+    <!-- Main Content Area -->
+    <div class="gallery-container">
+        <header style="text-align: center; margin-bottom: 2.5rem; color: #ffffff;">
+            <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem;">IntelliSchedule App Showcase</h1>
+            <p style="color: #94a3b8; font-size: 1.1rem;">A smart activity planner and schedule manager built for seamless daily organization.</p>
+        </header>
+
+        <!-- Screenshot Grid -->
+        <div class="gallery-grid">
+            <div class="screenshot-card">
+                <img src="img/screenshot1.png.jpeg" alt="Main Schedule Dashboard">
+                <div class="card-body">
+                    <h3>Interactive Dashboard</h3>
+                    <p>Overview of daily lectures, study blocks, and personal tasks at a glance.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="img/screenshot2.png.jpeg" alt="Timetable & Routine Planner">
+                <div class="card-body">
+                    <h3>Timetable & Routine Planner</h3>
+                    <p>Organizes course lecture slots and study sessions into clean time blocks.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="img/screenshot3.png.jpeg" alt="Task Management">
+                <div class="card-body">
+                    <h3>Task Management</h3>
+                    <p>Track deadlines, set priorities, and keep up with academic coursework seamlessly.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="img/screenshot4.png.jpeg" alt="Activity Analytics">
+                <div class="card-body">
+                    <h3>Activity Analytics</h3>
+                    <p>Visual breakdown of time spent across classes, personal projects, and rest.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <img src="img/screenshot5.png.jpeg" alt="Settings & Preferences">
+                <div class="card-body">
+                    <h3>Custom Preferences</h3>
+                    <p>Tailor notifications, dark mode, and schedule sync rules to fit your routine.</p>
+                </div>
             </div>
         </div>
-
-        <div class="card">
-            <img src="img/screenshot4.png.jpeg" alt="My Schedule View">
-            <div class="card-body">
-                <div class="card-title">My Schedule</div>
-                <div class="card-caption">Dedicated timetable interface with a quick floating button to add new activities.</div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/screenshot5.png.jpeg" alt="User Profile Header">
-            <div class="card-body">
-                <div class="card-title">User Profile & Identity</div>
-                <div class="card-caption">Displays logged-in account info alongside quick stat counters (Saved, Pending, Done).</div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/screenshot1.png.jpeg" alt="Preferences & Settings">
-            <div class="card-body">
-                <div class="card-title">App Preferences</div>
-                <div class="card-caption">Customizable toggles for notifications, location-based reminders, busy detection, and dark/light themes.</div>
-            </div>
-        </div>
-
-    </main>
+    </div>
 
 </body>
 </html>
