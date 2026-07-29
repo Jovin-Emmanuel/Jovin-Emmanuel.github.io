@@ -319,3 +319,34 @@ body {
   display: none;
   color: #007bff;
 }
+
+.status-table th {
+   background: #eef7f1;
+ }
+ 
+.team-table {
+  width: 100%;
+  max-width: 760px;
+  margin-top: 16px;
+  border-collapse: collapse;
+}
+
+.team-table th,
+.team-table td {
+  padding: 12px;
+  border: 1px solid #dfe8e3;
+  text-align: left;
+}
+
+.team-table th {
+  background: #eef7f1;
+}
+
+.team-table td:first-child {
+  font-weight: 700;
+}
+
+ .small-note {
+   color: #65757d;
+   font-size: 14px;
+ }
