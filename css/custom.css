@@ -2,6 +2,293 @@
  * Your custom CSS file
  *************************************************************************/
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #263238;
+}
+
+.hero-band {
+  background: #eef7f1;
+  border-bottom: 1px solid #d8eadf;
+}
+
+.hero-row {
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  color: #123524;
+  font-size: 56px;
+  line-height: 1;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #247449;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.custom-button-flat {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #197b45;
+  color: #ffffff !important;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+.custom-button-flat.alt {
+  background: #244054;
+}
+
+.hero-visual {
+  align-items: center;
+}
+
+.phone-mockup {
+  width: 280px;
+  min-height: 520px;
+  padding: 18px;
+  background: #101820;
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(16, 24, 32, 0.25);
+}
+
+.phone-top {
+  width: 80px;
+  height: 6px;
+  margin: 0 auto 18px;
+  background: #3a4a55;
+  border-radius: 6px;
+}
+
+.app-header,
+.notification-card,
+.mini-list {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.app-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+}
+
+.app-header img {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.app-header span {
+  display: block;
+  color: #607d8b;
+  font-size: 13px;
+}
+
+.notification-card {
+  margin-top: 16px;
+  padding: 18px;
+}
+
+.notification-card h3 {
+  margin: 12px 0 8px;
+  color: #123524;
+}
+
+.notification-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pill {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #e5f4ea;
+  color: #197b45;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mini-list {
+  margin-top: 16px;
+  padding: 12px 14px;
+}
+
+.mini-list div {
+  padding: 8px 0;
+  color: #40545f;
+}
+
+.mini-list i {
+  width: 22px;
+  color: #197b45;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.feature-card {
+  min-height: 160px;
+  padding: 18px;
+  border: 1px solid #dfe8e3;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.feature-card i {
+  color: #197b45;
+  font-size: 24px;
+}
+
+.feature-card h3 {
+  margin: 12px 0 8px;
+}
+
+.feature-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.architecture-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.architecture-flow div {
+  padding: 12px 14px;
+  background: #f5f8fa;
+  border: 1px solid #d9e4ea;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.architecture-flow span {
+  color: #607d8b;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-list span {
+  padding: 7px 10px;
+  background: #eaf2f6;
+  border-radius: 4px;
+  color: #244054;
+  font-weight: 700;
+}
+
+.demo-steps li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.scenario-panel {
+  padding: 20px;
+  background: #f5f8fa;
+  border-left: 5px solid #197b45;
+  border-radius: 6px;
+}
+
+.scenario-panel h3 {
+  margin-top: 0;
+}
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.status-table th,
+.status-table td {
+  padding: 12px;
+  border: 1px solid #dfe8e3;
+  text-align: left;
+}
+
+.status-table th {
+  background: #eef7f1;
+}
+
+.small-note {
+  color: #65757d;
+  font-size: 14px;
+}
+
+.footer-band {
+  background: #123524;
+  color: #ffffff;
+}
+
+.footer-band .text {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-copy h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-mockup {
+    width: calc(100vw - 90px);
+    min-height: 480px;
+  }
+
+  .architecture-flow {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .architecture-flow span {
+    display: none;
+  }
+}
+
 .custom-dropdown {
   width: 240px;
 }
