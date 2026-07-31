@@ -78,9 +78,18 @@ body {
 .phone-top {
   width: 80px;
   height: 6px;
-  margin: 0 auto 18px;
+  margin: 0 auto 12px;
   background: #3a4a55;
   border-radius: 6px;
+}
+
+.hero-screenshot {
+  display: block;
+  width: 100%;
+  max-height: 468px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
 }
 
 .app-header,
@@ -178,6 +187,38 @@ body {
   line-height: 1.5;
 }
 
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.screenshot-card {
+  margin: 0;
+  padding: 12px;
+  background: #101820;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(16, 24, 32, 0.16);
+}
+
+.screenshot-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 19;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+.screenshot-card figcaption {
+  padding: 10px 2px 2px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .architecture-flow {
   display: flex;
   flex-wrap: wrap;
@@ -245,6 +286,28 @@ body {
   background: #eef7f1;
 }
 
+.team-table {
+  width: 100%;
+  max-width: 760px;
+  margin-top: 16px;
+  border-collapse: collapse;
+}
+
+.team-table th,
+.team-table td {
+  padding: 12px;
+  border: 1px solid #dfe8e3;
+  text-align: left;
+}
+
+.team-table th {
+  background: #eef7f1;
+}
+
+.team-table td:first-child {
+  font-weight: 700;
+}
+
 .small-note {
   color: #65757d;
   font-size: 14px;
@@ -264,6 +327,10 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .screenshot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .hero-copy h1 {
     font-size: 44px;
   }
@@ -272,6 +339,10 @@ body {
 @media screen and (max-width: 600px) {
   .feature-grid {
     grid-template-columns: 1fr;
+  }
+
+  .screenshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .phone-mockup {
@@ -319,34 +390,3 @@ body {
   display: none;
   color: #007bff;
 }
-
-.status-table th {
-   background: #eef7f1;
- }
- 
-.team-table {
-  width: 100%;
-  max-width: 760px;
-  margin-top: 16px;
-  border-collapse: collapse;
-}
-
-.team-table th,
-.team-table td {
-  padding: 12px;
-  border: 1px solid #dfe8e3;
-  text-align: left;
-}
-
-.team-table th {
-  background: #eef7f1;
-}
-
-.team-table td:first-child {
-  font-weight: 700;
-}
-
- .small-note {
-   color: #65757d;
-   font-size: 14px;
- }
